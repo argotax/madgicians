@@ -1,8 +1,43 @@
 @import "common.css";
+body{
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 img{
   max-height: 100%;
 }
+
+
+.header-block{
+  display: flex;
+  height: 150px;
+}
+
+.header-wrapper{
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul{
+  display: flex;
+  margin: 0;
+}
+.navbar ul li{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
 .image-wrapper{
   width: 120px;
   height: 120px;
@@ -14,6 +49,13 @@ img{
   border-radius: 50%;
 }
 
+
+
+.title img{
+  margin: auto;
+}
+
+
 .videos-block{
   border: solid 1px black;
   background-color: red;
@@ -23,7 +65,18 @@ img{
 
 .photos-block{
   border: solid 1px black;
-  background-color: red;
-  width: 300px;
-  height: 300px;
+  border-radius: 30px;
+  background-color: black;
+  width: 500px;
+  height: 500px;
+}
+.carousel-item{
+  width: 500px;
+  height: 500px;
+}
+
+.photos-block img{
+  width: 500px;
+  height: 500px;
+  object-fit: scale-down;
 }

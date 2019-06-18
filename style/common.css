@@ -353,3 +353,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+
+ul{
+  list-style: none;
+  padding: inherit;
+}
