@@ -41,77 +41,81 @@
   </header>
 
   <main>
-    <div class="block body-block home">
-      <div class="title">
-        <img src="images/madgicians-title.jpeg" alt="Madgicians-title">
+    <div class="block body-block">
+      <div class="block home">
+        <div class="title">
+          <img src="images/madgicians-title.jpeg" alt="Madgicians-title">
+        </div>
+
+        <div class="image-wrapper" id="mini-logo">
+          <img src="images/madgicians-mini.png" alt="Madgicians-mini" class="madgicians-mini">
+        </div>
       </div>
 
-      <div class="image-wrapper">
-        <img src="images/madgicians-mini.png" alt="Madgicians-mini" class="madgicians-mini">
-      </div>
-      <div class="videos-block" onclick="">
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/508232325&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      </div>
-      <div class="photos-block" onclick="">
+      <div class="block block-présentation">
+        <div class="videos-block" onclick="">
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/508232325&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
 
-        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
+        <div class="photos-block" onclick="">
+
+          <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
 
-          </ol>
-          <!-- Wrapper for carousel items -->
-          <div class="carousel-inner">
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img src="images/1.jpg" alt="First Slide">
+                <img src="images/1.jpg" alt="First Slide">
 
               </div>
               <div class="carousel-item">
-                  <img src="images/2.jpg" alt="Second Slide">
+                <img src="images/2.jpg" alt="Second Slide">
               </div>
               <div class="carousel-item">
-                  <img src="images/3.jpg" alt="Third Slide">
+                <img src="images/3.jpg" alt="Third Slide">
               </div>
               <div class="carousel-item">
-                  <img src="images/4.jpg" alt="Third Slide">
+                <img src="images/4.jpg" alt="Third Slide">
               </div>
-          </div>
-          <!-- Carousel controls -->
-          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
               <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
               <span class="carousel-control-next-icon"></span>
-          </a>
+            </a>
+          </div>
+
+
+
         </div>
 
-
-
+        <div class="block-text">
+          Quorum nescius ne firmissimum. Aut cillum veniam eram vidisse, quibusdam multos
+          iis aliquip coniunctione. Fugiat cernantur doctrina.E magna voluptate,
+          incididunt id malis, se elit admodum quibusdam, hic eu concursionibus. Offendit
+          ita nostrud. Aute ab constias sed quis. Ita iudicem id vidisse ad iudicem sed
+          export senserit.Aute de incididunt, et cupidatat exquisitaque, consequat irure cernantur, est
+          nisi illum e aliquip. Nulla laboris exquisitaque. Esse cupidatat deserunt, ex
+          quo duis esse dolor.Eram o quamquam hic illum. Nulla eu consequat est quis.
+          Summis consequat firmissimum, ita iudicem sed possumus se si quis incididunt et
+          eram a aliquip te se irure ubi irure, voluptate ex vidisse, e eram fabulas, se
+          ubi illum magna export. O export offendit probant ita eu sunt ingeniis laborum,
+          o anim philosophari ne aliquip irure anim ullamco minim sed ita esse enim id
+          incurreret, amet arbitror graviterque ut aute iudicem ad malis nisi aut ad
+          offendit firmissimum.
+        </div>
       </div>
+
     </div>
-    <div class="block body-block block-présentation">
-      <div class="photos">
 
-      </div>
-      <div class="block-text">
-        Quorum nescius ne firmissimum. Aut cillum veniam eram vidisse, quibusdam multos
-        iis aliquip coniunctione. Fugiat cernantur doctrina.E magna voluptate,
-        incididunt id malis, se elit admodum quibusdam, hic eu concursionibus. Offendit
-        ita nostrud. Aute ab constias sed quis. Ita iudicem id vidisse ad iudicem sed
-        export senserit.Aute de incididunt, et cupidatat exquisitaque, consequat irure cernantur, est
-        nisi illum e aliquip. Nulla laboris exquisitaque. Esse cupidatat deserunt, ex
-        quo duis esse dolor.Eram o quamquam hic illum. Nulla eu consequat est quis.
-        Summis consequat firmissimum, ita iudicem sed possumus se si quis incididunt et
-        eram a aliquip te se irure ubi irure, voluptate ex vidisse, e eram fabulas, se
-        ubi illum magna export. O export offendit probant ita eu sunt ingeniis laborum,
-        o anim philosophari ne aliquip irure anim ullamco minim sed ita esse enim id
-        incurreret, amet arbitror graviterque ut aute iudicem ad malis nisi aut ad
-        offendit firmissimum.
-      </div>
-    </div>
     <div class="">
 
     </div>
@@ -135,6 +139,16 @@
   $(document).ready(function(){
           $("#myCarousel").carousel();
   });
+
+  var elementPosition = $('#mini-logo').offset();
+  $(window).scroll(function () {
+      if ($(window).scrollTop() > elementPosition.top) {
+          $('#mini-logo').css('position', 'fixed').css('top', '0');
+      } else {
+          $('#mini-logo').css('position', 'absolute');
+      }
+   });
+
   </script>
 </body>
 
