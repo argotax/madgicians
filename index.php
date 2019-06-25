@@ -40,7 +40,7 @@
 
   <main id="main">
 
-    <div class="block body-block">
+    <div class="body-block">
       <div class="block home current" id="home">
         <div class="title">
           <div class="center-abso title-wrapper">
@@ -55,27 +55,26 @@
       </div>
 
       <div class="block block-presentation" id="bio">
-
         <div class="text-block">
-            <div class="text-wrapper">
-              <p>
-                Quorum nescius ne firmissimum. Aut cillum veniam eram vidisse, quibusdam multos
-                iis aliquip coniunctione. Fugiat cernantur doctrina.E magna voluptate,
-                incididunt id malis, se elit admodum quibusdam, hic eu concursionibus. Offendit
-                ita nostrud. Aute ab constias sed quis. Ita iudicem id vidisse ad iudicem sed
-                export senserit.Aute de incididunt, et cupidatat exquisitaque, consequat irure cernantur, est
-                nisi illum e aliquip. Nulla laboris exquisitaque. Esse cupidatat deserunt, ex
-                quo duis esse dolor.Eram o quamquam hic illum. Nulla eu consequat est quis.
-                Summis consequat firmissimum, ita iudicem sed possumus se si quis incididunt et
-                eram a aliquip te se irure ubi irure, voluptate ex vidisse, e eram fabulas, se
-                ubi illum magna export. O export offendit probant ita eu sunt ingeniis laborum,
-                o anim philosophari ne aliquip irure anim ullamco minim sed ita esse enim id
-                incurreret, amet arbitror graviterque ut aute iudicem ad malis nisi aut ad
-                offendit firmissimum.
-              </p>
-            </div>
+          <div class="text-wrapper">
+            <h2>Découvrez nous</h2>
+            <p>
+              Quorum nescius ne firmissimum. Aut cillum veniam eram vidisse, quibusdam multos
+              iis aliquip coniunctione. Fugiat cernantur doctrina.E magna voluptate,
+              incididunt id malis, se elit admodum quibusdam, hic eu concursionibus. Offendit
+              ita nostrud. Aute ab constias sed quis. Ita iudicem id vidisse ad iudicem sed
+              export senserit.Aute de incididunt, et cupidatat exquisitaque, consequat irure cernantur, est
+              nisi illum e aliquip. Nulla laboris exquisitaque. Esse cupidatat deserunt, ex
+              quo duis esse dolor.Eram o quamquam hic illum. Nulla eu consequat est quis.
+              Summis consequat firmissimum, ita iudicem sed possumus se si quis incididunt et
+              eram a aliquip te se irure ubi irure, voluptate ex vidisse, e eram fabulas, se
+              ubi illum magna export. O export offendit probant ita eu sunt ingeniis laborum,
+              o anim philosophari ne aliquip irure anim ullamco minim sed ita esse enim id
+              incurreret, amet arbitror graviterque ut aute iudicem ad malis nisi aut ad
+              offendit firmissimum.
+            </p>
           </div>
-
+        </div>
         <div class="media-block">
           <div class="music-block" onclick="">
             <div class="music-wrapper">
@@ -84,8 +83,7 @@
           </div>
 
           <div class="photos-block" onclick="">
-          <div class="photos-wrapper">
-
+            <div class="photos-wrapper">
              <div id="myCarousel" class="carousel slide" data-interval="50000" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -98,8 +96,8 @@
                 <li data-target="#myCarousel" data-slide-to="7"></li>
                 <li data-target="#myCarousel" data-slide-to="8"></li>
                 <li data-target="#myCarousel" data-slide-to="9"></li>
-
               </ol>
+
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img class="d-block w-100" src="images/1.jpg" alt="First Slide">
@@ -129,6 +127,7 @@
                   <img class="d-block w-100" src="images/9.jpg" alt="Nineth Slide">
                 </div>
               </div>
+
               <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
               </a>
@@ -136,22 +135,53 @@
                 <span class="carousel-control-next-icon"></span>
               </a>
             </div>
-
+          </div>
+          </div>
 
         </div>
-        </div>
-
-      </div></div>
+      </div>
 
       <div class="block block-dates" id="dates">
-        <h2>Prochaines dates</h2>
-        <table>
-          <tr>
-            <th>Date</th>
-            <th>heure</th>
-            <th>lieu</th>
-          </tr>
-        </table>
+        <div class="dates-wrapper">
+          <h2 class="h2">Prochaines dates</h2>
+          <table class="dates-table">
+            <tr>
+              <th>Date</th>
+              <th>Heure</th>
+              <th>Lieu</th>
+              <th>Détails</th>
+            </tr>
+            <tr>
+              <td>25/09/2019</td>
+              <td>19h</td>
+              <td>L'épicerie sur le zinc (21 rue pasteur 72000 le mans)</td>
+              <td>Formation acoustique dans un lieu chaleureux où vous trouverez des produits régionaux pour accompagner le concert</td>
+            </tr>
+            <tr>
+              <td>19/10/2019</td>
+              <td>20h</td>
+              <td>Le circuit de la bière (35 rue machin 72000 le mans)</td>
+              <td>Concert avec la formation complète dans un grand local qui sert une grande variété de bières</td>
+            </tr>
+            <tr>
+              <td>12/10/2019</td>
+              <td>21h</td>
+              <td>Le Bigwood (32 rue truc 49100 Angers)</td>
+              <td>Nous présenterons la totalité de nos morceaux dans un bar ambiance chaleureux</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="block block-contact" id="contact">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="index.html" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter you name" required>
+            <input type="email" name="email" id="email" placeholder="Enter your mail adress" required>
+            <input type="textarea" name="message" id="message" placeholder="Enter your message" required>
+            <input type="submit" value="Send">
+          </form>
+        </div>
       </div>
     </div>
   </main>
