@@ -1,5 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!--
+// if (isset($_POST["email"]) && $_POST["email"] != "") {
+//   http_response_code(400);
+//   exit;
+// } else if (isset($_POST["email"]) && $_POST["email"] == "") {
+//   if($_POST["email2adress"]) {
+//     $recipient="madgicians@gmail.com"; //Enter your mail address
+//     $subject="Contact from Website"; //Subject
+//     $sender=$_POST["name"];
+//     $senderEmail=$_POST["email2adress"];
+//     $message=$_POST["message"];
+//     $mailBody="Name: $sender\nEmail Address: $senderEmail\n\nMessage: $message";
+//     mail($recipient, $subject, $mailBody);
+//     sleep(1);
+//   }
+// }
+ -->
 
 <head>
   <meta charset="utf-8">
@@ -21,7 +39,7 @@
         <div class="navbar">
           <nav>
             <ul class="op-sectionlist">
-              <li class="op-v-item"><a href="#home" class="op-v-link link home">Home</a></li>
+              <li class="op-v-item"><a href="#home" class="op-v-link link">Home</a></li>
               <li class="op-v-item"><a href="#bio" class="op-v-link link bio">Bio</a></li>
               <li class="op-v-item"><a href="#dates" class="op-v-link link dates">Dates</a></li>
               <li class="op-v-item"><a href="#contact" class="op-v-link link contact-us">Contact</a></li>
@@ -41,7 +59,7 @@
   <main id="main">
 
     <div class="body-block">
-      <div class="block home current" id="home">
+      <div class="home current" id="home">
         <div class="title">
           <div class="center-abso title-wrapper">
             <img src="images/madgicians-title.jpeg" alt="Madgicians-title">
@@ -175,11 +193,15 @@
 
       <div class="block block-contact" id="contact">
         <div class="contact-form-wrapper">
-          <form class="contact-form" action="index.html" method="post">
-            <input type="text" name="name" id="name" placeholder="Enter you name" required>
-            <input type="email" name="email" id="email" placeholder="Enter your mail adress" required>
-            <input type="textarea" name="message" id="message" placeholder="Enter your message" required>
-            <input type="submit" value="Send">
+          <form class="contact-form" action="index.html#home" method="post">
+            <input type="email" name="email" value="" style="Display:none">
+            <div class="infos">
+              <input type="text" name="name" id="name" placeholder="Enter you name" required>
+              <input type="email" name="email2adress" id="email" placeholder="Enter your mail adress" required>
+            </div>
+            <textarea type="text" name="message" id="message" placeholder="Enter your message" required>
+            </textarea>
+            <input class="submit-message" type="submit" value="Send">
           </form>
         </div>
       </div>
@@ -192,14 +214,29 @@
   <footer id="footer">
 
     <div class="footer-wrapper">
-      <div class="">
-        follow us
+      <div class="footer-element">
+        <h2>follow us</h2>
+        <div class="social-wrapper">
+          <div class="socials-footer">
+            <a href="https://www.instagram.com/madgicians/" target="_blank"><i class="fab fa-instagram" style="color:#833ab4; font-size:250%;"></i></a>
+            <a href="https://www.youtube.com/channel/UCuUX4GGebU61IHol_t28Iww" target="_blank"><i class="fab fa-youtube" style="color:#ff0000; font-size:250%;"></i></a>
+            <a href="https://soundcloud.com/madgicians" target="_blank"><i class="fab fa-soundcloud" style="color:#ff3e00; font-size:250%;"></i></a>
+            <a href="https://www.facebook.com/MadgiciansMusic/" target="_blank"><i class="fab fa-facebook-square" style="color:#3b5998; font-size:250%;"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="">
-        contact
+      <div class="footer-element">
+        <h2>
+          mentions légales
+        </h2>
+        <a href="http://localhost/madgicians/mentions_legales.php"></a>
+        <h3>Informations complémentaires</h3>
+        <p>Les images du logo madgicians, l'image du titre Madgicians sont sous licence créatice commons CC BY-NC-ND 4.0. Les </p>
       </div>
-      <div class="">
-        Bio
+      <div class="footer-element">
+        <h2>
+          Bio
+        </h2>
       </div>
     </div>
 
@@ -225,7 +262,7 @@
   var elementPosition = $('#mini-logo').offset();
   $(window).scroll(function () {
     if ($(window).scrollTop() > elementPosition.top-25) {
-      $('#mini-logo').css('position', 'fixed').css('top', '25px');
+      $('#mini-logo').css('position', 'fixed').css('top', '15px');
     } else {
       $('#mini-logo').css('position', 'absolute').css('top', '80%');
     }
